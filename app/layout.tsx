@@ -1,6 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import { LenisProvider } from "@/providers/lenis-provider";
 import "./globals.css";
 
 const inter = Inter({
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body className="font-sans bg-black text-white antialiased">
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
