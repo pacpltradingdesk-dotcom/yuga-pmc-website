@@ -183,7 +183,7 @@ export default function Contact() {
             </div>
 
             <motion.a
-              href={`https://wa.me/${COMPANY.whatsapp}?text=Hi%20PACPL%2C%20I%27m%20interested%20in%20bio-bitumen%20plant%20setup.`}
+              href={`https://wa.me/${COMPANY.whatsapp}?text=Hi%20YUGA%20PMC%2C%20I%27m%20interested%20in%20bio-bitumen%20plant%20setup.`}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}

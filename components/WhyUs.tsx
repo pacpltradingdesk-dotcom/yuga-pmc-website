@@ -25,7 +25,7 @@ export default function WhyUs() {
           className="text-center mb-16"
         >
           <motion.span variants={fadeUp} className="section-label">
-            Why Choose PACPL
+            Why Choose YUGA PMC
           </motion.span>
           <motion.h2
             variants={fadeUp}

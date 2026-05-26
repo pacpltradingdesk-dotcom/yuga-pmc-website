@@ -1,5 +1,6 @@
 // components/Footer.tsx
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink, Globe, Share2 } from "lucide-react";
 import { COMPANY, NAV_LINKS } from "@/lib/company-data";
 
@@ -19,13 +20,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gold flex items-center justify-center">
-                <span className="text-black font-black text-sm">P</span>
-              </div>
-              <span className="font-display font-bold text-white text-lg">
-                {COMPANY.shortName}
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/yuga-logo.jpg"
+                alt="YUGA PMC"
+                width={120}
+                height={48}
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-text-secondary text-sm leading-relaxed mb-6">
               India&apos;s #1 Bio-Bitumen Plant Setup Consultant. From land

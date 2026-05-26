@@ -11,16 +11,16 @@ const MILESTONES = [
   { year: "2001", event: "Founded in bitumen industry" },
   { year: "2009", event: "Registered as Company Director (MCA)" },
   { year: "2020", event: "Omnipotent Industries IPO — BSE listed" },
-  { year: "2024", event: "9th plant commissioned" },
+  { year: "2024", event: "10th plant commissioned" },
   { year: "2026", event: "CSIR-CRRI KrishiBind licensee — India's first bio-bitumen" },
 ];
 
 const KEY_FACTS = [
   "25+ years in bitumen since 2001",
-  "9 plants commissioned across India",
+  "10 plants commissioned across India",
   "₹25,000 Cr+ market opportunity",
   "NHAI vendor empanelment support",
-  "150,000 verified industry contacts",
+  "4,452 verified industry contacts",
   "6-month post-commissioning support",
 ];
 
@@ -48,14 +48,13 @@ export default function About() {
               <span className="text-gradient">Bio-Bitumen</span> Consultant
             </motion.h2>
             <motion.p variants={fadeUp} className="text-text-secondary text-lg leading-relaxed mb-4">
-              PPS Anantams Corporation Private Limited (PACPL) is India&apos;s
-              leading full-service Project Management Consultancy for
-              Bio-Modified Bitumen, Conventional Bitumen, CRMB, PMB, and
-              Emulsion plants.
+              YUGA PMC is India&apos;s leading full-service Project Management
+              Consultancy for Bio-Modified Bitumen, Conventional Bitumen, CRMB,
+              PMB, and Emulsion plants.
             </motion.p>
             <motion.p variants={fadeUp} className="text-text-secondary text-base leading-relaxed mb-8">
               Founded by Prince Pratap Shah — a 25-year bitumen industry veteran
-              — PACPL provides end-to-end consulting from feasibility study to
+              — YUGA PMC provides end-to-end consulting from feasibility study to
               post-commissioning hand-holding. We are the ONE-POINT SOLUTION
               PROVIDER for anyone looking to set up a bio-bitumen or bitumen
               plant in India.
@@ -113,7 +112,7 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 glass rounded-xl px-4 py-3">
-              <p className="text-gold font-black text-2xl font-display">9</p>
+              <p className="text-gold font-black text-2xl font-display">10</p>
               <p className="text-white text-xs font-medium">Plants Commissioned</p>
             </div>
           </motion.div>

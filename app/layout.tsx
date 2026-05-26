@@ -18,16 +18,16 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "PACPL — India's #1 Bio-Bitumen Plant Setup Consultant",
+  title: "YUGA PMC — India's #1 Bio-Bitumen Plant Setup Consultant",
   description:
-    "PPS Anantams Corporation Pvt Ltd — 25 years of bitumen expertise, 9 plants commissioned, complete A-to-Z PMC consulting for bio-bitumen plant setup across India.",
+    "YUGA PMC — 25 years of bitumen expertise, 10 plants commissioned, complete A-to-Z PMC consulting for bio-bitumen plant setup across India.",
   metadataBase: new URL("https://pacpl.in"),
   openGraph: {
-    title: "PACPL — India's #1 Bio-Bitumen Plant Setup Consultant",
+    title: "YUGA PMC — India's #1 Bio-Bitumen Plant Setup Consultant",
     description:
-      "From land selection to commercial production. 9 plants commissioned, 25 years expertise, 18 states covered.",
+      "From land selection to commercial production. 10 plants commissioned, 25 years expertise, 17 states covered.",
     url: "https://pacpl.in",
-    siteName: "PACPL",
+    siteName: "YUGA PMC",
     type: "website",
   },
 };

@@ -92,8 +92,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10"
         >
-          From land selection to commercial production — PPS Anantams handles
-          everything. 9 plants commissioned. 25 years of bitumen expertise.
+          From land selection to commercial production — YUGA PMC handles
+          everything. 10 plants commissioned. 25 years of bitumen expertise.
         </motion.p>
 
         {/* CTAs */}

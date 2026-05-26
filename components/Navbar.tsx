@@ -2,11 +2,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useScroll } from "@/hooks/use-scroll";
-import { NAV_LINKS, COMPANY } from "@/lib/company-data";
+import { NAV_LINKS } from "@/lib/company-data";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
@@ -28,13 +29,15 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gold flex items-center justify-center">
-              <span className="text-black font-black text-sm">P</span>
-            </div>
-            <span className="font-display font-bold text-white text-lg tracking-tight">
-              {COMPANY.shortName}
-            </span>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/yuga-logo.jpg"
+              alt="YUGA PMC"
+              width={120}
+              height={48}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
