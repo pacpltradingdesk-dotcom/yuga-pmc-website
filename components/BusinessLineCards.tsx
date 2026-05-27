@@ -84,7 +84,7 @@ export default function BusinessLineCards() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/85 to-black/50 z-10" />
               <div
                 className={`absolute inset-0 ${
                   line.color === "gold"
