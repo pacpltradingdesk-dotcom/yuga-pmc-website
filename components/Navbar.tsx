@@ -35,7 +35,7 @@ export default function Navbar() {
               alt="YUGA PMC"
               width={120}
               height={48}
-              className="h-12 w-auto object-contain"
+              className="h-12 w-auto object-contain mix-blend-screen"
               priority
             />
           </Link>
