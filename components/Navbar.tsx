@@ -33,9 +33,9 @@ export default function Navbar() {
             <Image
               src="/yuga-logo.jpg"
               alt="YUGA PMC"
-              width={120}
-              height={48}
-              className="h-12 w-auto object-contain mix-blend-screen"
+              width={192}
+              height={108}
+              className="h-14 w-auto object-contain mix-blend-screen"
               priority
             />
           </Link>
