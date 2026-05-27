@@ -30,13 +30,11 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/yuga-logo.jpg`}
               alt="YUGA PMC"
-              width={192}
-              height={108}
               className="h-14 w-auto object-contain mix-blend-screen"
-              priority
             />
           </Link>
 

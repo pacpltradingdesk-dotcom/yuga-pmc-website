@@ -21,11 +21,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/yuga-logo.jpg`}
                 alt="YUGA PMC"
-                width={120}
-                height={48}
                 className="h-12 w-auto object-contain"
               />
             </div>
