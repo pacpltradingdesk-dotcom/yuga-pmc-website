@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/yuga-logo.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/yuga-logo.jpg`}
                 alt="YUGA PMC"
                 width={120}
                 height={48}

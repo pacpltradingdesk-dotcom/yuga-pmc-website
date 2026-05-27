@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="/yuga-logo.jpg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/yuga-logo.jpg`}
               alt="YUGA PMC"
               width={192}
               height={108}
