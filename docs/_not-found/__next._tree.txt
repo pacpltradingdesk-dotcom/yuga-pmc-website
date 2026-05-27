@@ -1,2 +1,2 @@
-:HL["/yuga-pmc-website/_next/static/chunks/0g72ck.vkp6d9.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"aeNy7GwWuES6hBejS1G2E"}
+:HL["/yuga-pmc-live/_next/static/chunks/12cha4uupcozt.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"tgmWzMN2wpoZjr3_JNZ5L"}
