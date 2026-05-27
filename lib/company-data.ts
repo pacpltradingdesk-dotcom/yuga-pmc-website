@@ -159,7 +159,7 @@ export const CASE_STUDIES = [
     capacity: "30 MT/Day",
     outcome: "40 km resurfaced with bio-modified VG-30",
     category: "Highway",
-    image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=600&q=75",
   },
   {
     id: "urban-mh",
@@ -168,7 +168,7 @@ export const CASE_STUDIES = [
     capacity: "20 MT/Day",
     outcome: "850 tonnes supplied to MSRDC contractor",
     category: "Urban",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75",
   },
   {
     id: "industrial-rj",
@@ -177,7 +177,7 @@ export const CASE_STUDIES = [
     capacity: "15 MT/Day",
     outcome: "Pyrolysis operator converted to bio-bitumen",
     category: "Industrial",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
   },
 ] as const;
 
@@ -289,11 +289,11 @@ export const CAPACITY_OPTIONS = [
 ] as const;
 
 export const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=85";
+  "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&q=80";
 export const ABOUT_IMAGE =
-  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80";
+  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=75";
 export const SUSTAINABILITY_IMAGE =
-  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80";
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=75";
 
 // ── Why Now ───────────────────────────────────────────────────────────────────
 
