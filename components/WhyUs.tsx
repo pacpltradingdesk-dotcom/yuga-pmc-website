@@ -12,6 +12,12 @@ import { cn } from "@/lib/utils";
 const ICONS = { Award, Factory, Route, Network, BadgeCheck, TrendingUp } as const;
 type IconName = keyof typeof ICONS;
 
+// Visual treatment per card id
+const CARD_STYLE: Record<string, string> = {
+  expertise: "relative overflow-hidden",
+  network:   "bg-[radial-gradient(ellipse_at_bottom_right,rgba(245,158,11,0.10),transparent_60%)]",
+};
+
 export default function WhyUs() {
   return (
     <section className="py-32 px-6 bg-charcoal">
@@ -24,12 +30,9 @@ export default function WhyUs() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-16"
         >
-          <motion.span variants={fadeUp} className="section-label">
-            Why Choose YUGA PMC
-          </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-display font-bold text-4xl md:text-6xl text-white mt-4 mb-4"
+            className="font-display font-bold text-4xl md:text-6xl text-white mb-4"
           >
             The Difference That{" "}
             <span className="text-gradient">Matters Most</span>
@@ -46,6 +49,7 @@ export default function WhyUs() {
         >
           {WHY_US_CARDS.map((card) => {
             const Icon = ICONS[card.icon as IconName];
+            const isLarge = card.size === "large";
             return (
               <motion.div
                 key={card.id}
@@ -53,23 +57,40 @@ export default function WhyUs() {
                 className={cn(
                   "glass-strong rounded-2xl p-6 flex flex-col justify-between",
                   "border border-border hover:border-gold/20 transition-all duration-300 group",
-                  card.size === "large" && "md:col-span-2 md:row-span-2",
-                  card.size === "wide"  && "md:col-span-2"
+                  isLarge && "md:col-span-2 md:row-span-2",
+                  card.size === "wide" && "md:col-span-2",
+                  CARD_STYLE[card.id] ?? ""
                 )}
               >
-                <div className="w-10 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
+                {/* Background image for expertise cell */}
+                {card.id === "expertise" && (
+                  <>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=60"
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute inset-0 w-full h-full object-cover opacity-15"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-2/80 to-transparent rounded-2xl" />
+                  </>
+                )}
+
+                <div className="relative z-10 w-10 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
                   <Icon size={18} className="text-gold" />
                 </div>
-                <div>
+                <div className="relative z-10">
                   <h3
                     className={cn(
                       "font-display font-bold text-white leading-snug",
-                      card.size === "large" ? "text-2xl mb-2" : "text-sm mb-1"
+                      isLarge ? "text-2xl mb-2" : "text-sm mb-1"
                     )}
                   >
                     {card.title}
                   </h3>
-                  <p className="text-text-secondary text-xs leading-relaxed">{card.body}</p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    {card.body}
+                  </p>
                 </div>
               </motion.div>
             );

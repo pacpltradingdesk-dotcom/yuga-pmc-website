@@ -159,7 +159,7 @@ export default function AboutPage() {
           <div className="absolute inset-0">
             <Image
               src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1920&q=85"
-              alt="Corporate office — YUGA PMC headquarters"
+              alt="Corporate office, YUGA PMC headquarters"
               fill
               sizes="100vw"
               className="object-cover"
@@ -234,7 +234,7 @@ export default function AboutPage() {
                   className="text-text-secondary leading-relaxed mt-6"
                 >
                   Prince Pratap Shah&apos;s journey began in 2001 at Southern
-                  Asphalt, Mangalore — where he mastered every layer of bitumen
+                  Asphalt, Mangalore, where he mastered every layer of bitumen
                   production from the ground up. Over two and a half decades he
                   moved through emulsion, blown bitumen, CRMB, and PMB plants
                   across Karnataka, Maharashtra, and Gujarat, accumulating an
@@ -245,8 +245,8 @@ export default function AboutPage() {
                   variants={fadeUp}
                   className="text-text-secondary leading-relaxed mt-4"
                 >
-                  In 2018 he founded Omnipotent Industries Limited — a
-                  BSE-listed company that achieved IPO in 2020 — before pivoting
+                  In 2018 he founded Omnipotent Industries Limited, a
+                  BSE-listed company that achieved IPO in 2020, before pivoting
                   to become India&apos;s premier bio-bitumen plant consultant.
                   Today YUGA PMC has commissioned 10 plants across 17 states,
                   backed by a live network of 4,452 verified industry contacts
@@ -299,7 +299,7 @@ export default function AboutPage() {
               >
                 <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
-                  alt="Prince Pratap Shah — Founder & Managing Director, YUGA PMC"
+                  alt="Prince Pratap Shah, Founder and Managing Director, YUGA PMC"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -340,7 +340,7 @@ export default function AboutPage() {
                 variants={fadeUp}
                 className="font-display font-black text-3xl md:text-4xl text-white mt-4"
               >
-                2001 — 2026: Building India&apos;s{" "}
+                2001-2026: Building India&apos;s{" "}
                 <span className="text-gradient">Bitumen Industry</span>
               </motion.h2>
             </motion.div>
@@ -523,7 +523,7 @@ export default function AboutPage() {
               className="text-text-secondary text-lg mt-6 leading-relaxed"
             >
               25 years of expertise, a 4,452-strong industry network, and a
-              proven A-to-Z PMC framework — everything you need to commission
+              proven A-to-Z PMC framework: everything you need to commission
               your bio-bitumen plant on time and on budget.
             </motion.p>
 
@@ -532,7 +532,7 @@ export default function AboutPage() {
                 href="/#contact"
                 className="inline-flex items-center gap-2 bg-gold text-black font-bold text-base px-8 py-4 rounded-full hover:bg-amber-400 transition-colors duration-200 glow-gold min-h-[52px]"
               >
-                Book a Free Consultation
+                Book Free Consultation
                 <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </motion.div>

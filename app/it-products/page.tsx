@@ -80,7 +80,7 @@ const WHY_CUSTOM = [
     icon: Layers,
     title: "Industry-Specific",
     description:
-      "Built around bitumen plant workflows, NHAI compliance, and Indian supply chain realities — not generic templates.",
+      "Built around bitumen plant workflows, NHAI compliance, and Indian supply chain realities. Not generic templates.",
   },
   {
     id: "offline",
@@ -94,7 +94,7 @@ const WHY_CUSTOM = [
     icon: MessageCircle,
     title: "Integrates with WhatsApp",
     description:
-      "Alerts, approvals, and reports delivered via WhatsApp — the channel your team already uses every day.",
+      "Alerts, approvals, and reports delivered via WhatsApp, the channel your team already uses every day.",
   },
 ] as const;
 

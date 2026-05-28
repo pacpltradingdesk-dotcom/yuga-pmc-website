@@ -68,18 +68,15 @@ export default function Technology() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-20"
         >
-          <motion.span variants={fadeUp} className="section-label">
-            The Technology
-          </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-display font-bold text-4xl md:text-6xl text-white mt-4 mb-4"
+            className="font-display font-bold text-4xl md:text-6xl text-white mb-4"
           >
             How <span className="text-gradient">Bio-Bitumen</span> is Made
           </motion.h2>
           <motion.p variants={fadeUp} className="text-text-secondary text-lg max-w-2xl mx-auto">
             Four integrated stages convert agro-waste into commercial bio-bitumen
-            for India&apos;s road network — all implementable with PACPL&apos;s proven process.
+            for India&apos;s road network, all implementable with PACPL&apos;s proven process.
           </motion.p>
         </motion.div>
 

@@ -20,19 +20,16 @@ export default function Products() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-16"
         >
-          <motion.span variants={fadeUp} className="section-label">
-            Our Products
-          </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-display font-bold text-4xl md:text-6xl text-white mt-4 mb-4"
+            className="font-display font-bold text-4xl md:text-6xl text-white mb-4"
           >
             Complete Bio-Bitumen{" "}
             <span className="text-gradient">Product Range</span>
           </motion.h2>
           <motion.p variants={fadeUp} className="text-text-secondary text-lg max-w-2xl mx-auto">
             From CSIR-CRRI certified bio-modified blends to industrial-grade
-            oxidized bitumen — every product you need for India&apos;s roads.
+            oxidized bitumen: every product you need for India&apos;s roads.
           </motion.p>
         </motion.div>
 

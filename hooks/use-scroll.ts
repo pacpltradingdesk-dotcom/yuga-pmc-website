@@ -1,16 +1,16 @@
 // hooks/use-scroll.ts
 "use client";
 
-import { useState, useEffect } from "react";
+import { useMotionValueEvent, useScroll as useMotionScroll } from "framer-motion";
+import { useState } from "react";
 
-export function useScroll(threshold = 50) {
+export function useScroll(threshold = 60) {
+  const { scrollY } = useMotionScroll();
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > threshold);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [threshold]);
+  useMotionValueEvent(scrollY, "change", (v) => {
+    setScrolled(v > threshold);
+  });
 
   return scrolled;
 }

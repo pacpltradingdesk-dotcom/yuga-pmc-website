@@ -13,7 +13,7 @@ const LINES = [
     label: "Service 01",
     title: "Bio-Bitumen\nPlant Consulting",
     description:
-      "End-to-end Project Management Consultancy — from feasibility study and land selection to commercial production. India's only A-to-Z consultant for bio-bitumen plants.",
+      "End-to-end Project Management Consultancy: from feasibility study and land selection to commercial production. India's only A-to-Z consultant for bio-bitumen plants.",
     cta: "Explore Consulting",
     href: "/consulting",
     color: "gold",
@@ -29,7 +29,7 @@ const LINES = [
     label: "Service 02",
     title: "Industrial IT\nProducts",
     description:
-      "Custom digital solutions built specifically for bitumen and industrial clients — plant dashboards, procurement systems, market intelligence tools, and mobile apps.",
+      "Custom digital solutions built specifically for bitumen and industrial clients: plant dashboards, procurement systems, market intelligence tools, and mobile apps.",
     cta: "Explore IT Products",
     href: "/it-products",
     color: "green",
@@ -53,12 +53,9 @@ export default function BusinessLineCards() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-16"
         >
-          <motion.span variants={fadeUp} className="section-label">
-            What We Do
-          </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-display font-bold text-4xl md:text-6xl text-white mt-4"
+            className="font-display font-bold text-4xl md:text-6xl text-white"
           >
             Two Lines of <span className="text-gradient">Excellence</span>
           </motion.h2>

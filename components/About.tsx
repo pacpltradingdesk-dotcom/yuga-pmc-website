@@ -10,9 +10,9 @@ import { COMPANY, FOUNDER, ABOUT_IMAGE } from "@/lib/company-data";
 const MILESTONES = [
   { year: "2001", event: "Founded in bitumen industry" },
   { year: "2009", event: "Registered as Company Director (MCA)" },
-  { year: "2020", event: "Omnipotent Industries IPO — BSE listed" },
+  { year: "2020", event: "Omnipotent Industries IPO, BSE listed" },
   { year: "2024", event: "10th plant commissioned" },
-  { year: "2026", event: "CSIR-CRRI KrishiBind licensee — India's first bio-bitumen" },
+  { year: "2026", event: "CSIR-CRRI KrishiBind licensee, India's first bio-bitumen" },
 ];
 
 const KEY_FACTS = [
@@ -53,8 +53,8 @@ export default function About() {
               PMB, and Emulsion plants.
             </motion.p>
             <motion.p variants={fadeUp} className="text-text-secondary text-base leading-relaxed mb-8">
-              Founded by Prince Pratap Shah — a 25-year bitumen industry veteran
-              — YUGA PMC provides end-to-end consulting from feasibility study to
+              Founded by Prince Pratap Shah, a 25-year bitumen industry veteran.
+              YUGA PMC provides end-to-end consulting from feasibility study to
               post-commissioning hand-holding. We are the ONE-POINT SOLUTION
               PROVIDER for anyone looking to set up a bio-bitumen or bitumen
               plant in India.
@@ -125,7 +125,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-label justify-center mb-10">Our Journey</p>
+          <p className="font-display font-bold text-white text-xl text-center mb-10">Our Journey</p>
           <div className="relative">
             {/* Line */}
             <motion.div

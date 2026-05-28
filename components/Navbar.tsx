@@ -57,7 +57,7 @@ export default function Navbar() {
               href="#contact"
               className="hidden md:inline-flex items-center gap-2 bg-gold text-black text-sm font-bold px-5 py-2.5 rounded-full hover:bg-amber-400 transition-colors glow-gold"
             >
-              Get Consultation
+              Book Free Consultation
             </Link>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -96,7 +96,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="mt-4 inline-flex items-center justify-center bg-gold text-black font-bold px-6 py-4 rounded-full text-lg"
               >
-                Get Free Consultation
+                Book Free Consultation
               </Link>
             </nav>
           </motion.div>

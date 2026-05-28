@@ -25,7 +25,7 @@ export default function Contact() {
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    const subject = encodeURIComponent(`Bio-Bitumen Plant Inquiry — ${data.capacity}`);
+    const subject = encodeURIComponent(`Bio-Bitumen Plant Inquiry: ${data.capacity}`);
     const body = encodeURIComponent(
       `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nCapacity: ${data.capacity}\n\n${data.message}`
     );
@@ -148,7 +148,7 @@ export default function Contact() {
                   type="submit"
                   className="w-full bg-gradient-to-r from-gold to-amber-400 text-black font-bold py-4 rounded-xl text-sm uppercase tracking-wider glow-gold hover:opacity-90 transition-opacity"
                 >
-                  Get Free Consultation →
+                  Book Free Consultation
                 </motion.button>
               </form>
             )}
@@ -209,7 +209,7 @@ export default function Contact() {
           href="#contact"
           className="flex items-center justify-center bg-gold text-black font-bold py-4 rounded-full text-sm uppercase tracking-wider glow-gold"
         >
-          Get Free Consultation
+          Book Free Consultation
         </a>
       </div>
     </section>

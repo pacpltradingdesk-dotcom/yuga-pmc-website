@@ -617,7 +617,7 @@ export default function PyrolysisPage() {
                   href="/#contact"
                   className="inline-flex items-center gap-2 bg-gold text-black font-bold text-base px-8 py-4 rounded-full hover:bg-amber-400 transition-colors glow-gold min-h-[44px]"
                 >
-                  Get Free Consultation
+                  Book Free Consultation
                   <ArrowRight size={16} aria-hidden="true" />
                 </Link>
                 <Link

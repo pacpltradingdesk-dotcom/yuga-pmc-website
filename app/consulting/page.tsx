@@ -232,7 +232,7 @@ export default function ConsultingPage() {
                 variants={fadeUp}
                 className="text-base sm:text-lg text-text-secondary leading-relaxed mb-10 max-w-2xl"
               >
-                From feasibility study to first tonne of certified bio-bitumen — YUGA PMC
+                From feasibility study to first tonne of certified bio-bitumen. YUGA PMC
                 manages everything. 10 plants commissioned. 4,452 industry contacts.
               </motion.p>
 
@@ -244,7 +244,7 @@ export default function ConsultingPage() {
                   href="#contact"
                   className="inline-flex items-center gap-2 bg-gold text-black font-bold text-sm px-6 py-3 rounded-full hover:bg-amber-400 transition-colors glow-gold min-h-[44px]"
                 >
-                  Get Free Consultation
+                  Book Free Consultation
                   <ArrowRight size={16} aria-hidden="true" />
                 </Link>
                 <Link
@@ -329,7 +329,7 @@ export default function ConsultingPage() {
                 <span className="text-gradient">Management</span>
               </motion.h2>
               <motion.p variants={fadeUp} className="text-text-secondary text-base mt-4 max-w-2xl mx-auto">
-                Six comprehensive service pillars — from the first drawing board moment to
+                Six comprehensive service pillars: from the first drawing board moment to
                 the day your plant ships its first certified tonne.
               </motion.p>
             </motion.div>

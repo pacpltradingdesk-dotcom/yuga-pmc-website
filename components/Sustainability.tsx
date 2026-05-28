@@ -58,12 +58,9 @@ export default function Sustainability() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-16"
         >
-          <motion.span variants={fadeUp} className="section-label" style={{ color: "#22C55E" }}>
-            Environmental Impact
-          </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-display font-bold text-4xl md:text-6xl text-white mt-4 mb-4"
+            className="font-display font-bold text-4xl md:text-6xl text-white mb-4"
           >
             Building Roads,{" "}
             <span className="text-gradient-green">Protecting the Planet</span>
@@ -71,7 +68,7 @@ export default function Sustainability() {
           <motion.p variants={fadeUp} className="text-text-secondary text-lg max-w-2xl mx-auto">
             India became the world&apos;s first country to commercially produce
             bio-bitumen (January 2026). PACPL holds CSIR-CRRI KrishiBind
-            technology licence — one of only 14 companies in India.
+            technology licence, one of only 14 companies in India.
           </motion.p>
         </motion.div>
 
@@ -118,7 +115,7 @@ export default function Sustainability() {
         >
           <Image
             src={SUSTAINABILITY_IMAGE}
-            alt="Green landscape — environmental sustainability"
+            alt="Green landscape representing environmental sustainability"
             fill
             className="object-cover"
             sizes="100vw"

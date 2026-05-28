@@ -19,7 +19,7 @@ export const FOUNDER = {
   title: "Founder & Managing Director",
   experience: "25+ Years in Bitumen Industry",
   din: "DIN 06680837",
-  bseListed: "Omnipotent Industries Limited — BSE-Listed (IPO 2020)",
+  bseListed: "Omnipotent Industries Limited, BSE-Listed (IPO 2020)",
   since: "Director since 2009",
 } as const;
 
@@ -185,7 +185,7 @@ export const WHY_US_CARDS = [
   {
     id: "expertise",
     title: "25 Years of Expertise",
-    body: "In bitumen industry since 2001 — before bio-bitumen was a policy mandate.",
+    body: "In bitumen industry since 2001, before bio-bitumen was a policy mandate.",
     icon: "Award",
     size: "large",
   },
@@ -199,7 +199,7 @@ export const WHY_US_CARDS = [
   {
     id: "pmc",
     title: "A-to-Z PMC",
-    body: "Land to commercial production — one partner for everything.",
+    body: "Land to commercial production. One partner for everything.",
     icon: "Route",
     size: "small",
   },
@@ -220,7 +220,7 @@ export const WHY_US_CARDS = [
   {
     id: "bse",
     title: "BSE-Listed Founder",
-    body: "Omnipotent Industries Ltd — IPO 2020, DIN 06680837.",
+    body: "Omnipotent Industries Ltd, IPO 2020, DIN 06680837.",
     icon: "TrendingUp",
     size: "small",
   },
@@ -230,7 +230,7 @@ export const TESTIMONIALS = [
   {
     id: "t1",
     quote:
-      "YUGA PMC's end-to-end support was exceptional. From DPR to commissioning in 8 months — we couldn't have done it without Prince Shah's team.",
+      "YUGA PMC's end-to-end support was exceptional. From DPR to commissioning in 8 months. We couldn't have done it without Prince Shah's team.",
     name: "Rajesh Mehta",
     company: "Mehta Infra Pvt Ltd",
     location: "Gujarat",
@@ -270,7 +270,7 @@ export const TESTIMONIALS = [
   {
     id: "t6",
     quote:
-      "The regulatory support — PCB consents, factory licence, PESO — was handled entirely by YUGA PMC. Saved us months of delays.",
+      "The regulatory support (PCB consents, factory licence, PESO) was handled entirely by YUGA PMC. Saved us months of delays.",
     name: "Mohammed Iqbal",
     company: "Iqbal Construction",
     location: "Karnataka",
@@ -278,13 +278,13 @@ export const TESTIMONIALS = [
 ] as const;
 
 export const CAPACITY_OPTIONS = [
-  "5 MT/Day — ₹1.5 Crore",
-  "10 MT/Day — ₹3.0 Crore",
-  "15 MT/Day — ₹4.5 Crore",
-  "20 MT/Day — ₹8.0 Crore",
-  "25 MT/Day — ₹10.0 Crore",
-  "30 MT/Day — ₹12.0 Crore",
-  "50 MT/Day — ₹16.0 Crore",
+  "5 MT/Day - Rs 1.5 Crore",
+  "10 MT/Day - Rs 3.0 Crore",
+  "15 MT/Day - Rs 4.5 Crore",
+  "20 MT/Day - Rs 8.0 Crore",
+  "25 MT/Day - Rs 10.0 Crore",
+  "30 MT/Day - Rs 12.0 Crore",
+  "50 MT/Day - Rs 16.0 Crore",
   "Custom / 75–100 MT/Day",
 ] as const;
 
@@ -310,7 +310,7 @@ export const WHY_NOW = [
     id: "wn2",
     number: "02",
     title: "CSIR-CRRI Transfer",
-    body: "CSIR-CRRI transferred KrishiBind technology to 14 companies on 7 Jan 2026 — the window is open right now.",
+    body: "CSIR-CRRI transferred KrishiBind technology to 14 companies on 7 Jan 2026. The window is open right now.",
     stat: "14",
     statLabel: "Licensees So Far",
   },
@@ -343,14 +343,14 @@ export const WHY_NOW = [
 // ── Key Credentials ───────────────────────────────────────────────────────────
 
 export const KEY_CREDENTIALS = [
-  "BSE-Listed Founder — Omnipotent Industries (1.2L MT, 11 JVs)",
-  "Int'l Import Contracts — 2.4 Lakh MT/yr VG-30 (Iraq/USA via Getka)",
-  "Proven Consultant — 2 paid projects (Teknobit 2016 & 2024)",
-  "5 Product Types — Emulsion / Blown / CRMB / PMB / VG30",
-  "17-State Distribution — PAN India network, first of its kind",
-  "Pride of India Award — Best Fast-Growing Business 2021",
-  "Iran Consulate — Direct meeting for bitumen sourcing",
-  "Bitumen India Forum — Founder Member",
+  "BSE-Listed Founder: Omnipotent Industries (1.2L MT, 11 JVs)",
+  "Int'l Import Contracts: 2.4 Lakh MT/yr VG-30 (Iraq/USA via Getka)",
+  "Proven Consultant: 2 paid projects (Teknobit 2016 & 2024)",
+  "5 Product Types: Emulsion / Blown / CRMB / PMB / VG30",
+  "17-State Distribution: PAN India network, first of its kind",
+  "Pride of India Award: Best Fast-Growing Business 2021",
+  "Iran Consulate: Direct meeting for bitumen sourcing",
+  "Bitumen India Forum: Founder Member",
 ] as const;
 
 // ── Career Track ─────────────────────────────────────────────────────────────
@@ -359,7 +359,7 @@ export const CAREER_TRACK = [
   { year: 2001, company: "Southern Asphalt", location: "Mangalore, Karnataka", plantType: "Bitumen Emulsion Plant", role: "Employee (GM)" },
   { year: 2004, company: "Tiki Tar Industries", location: "Karnataka", plantType: "Blown Bitumen Plant", role: "Employee (GM)" },
   { year: 2008, company: "Tiki Tar Industries", location: "Karnataka", plantType: "CRMB Plant", role: "Employee (GM)" },
-  { year: 2014, company: "Krush Tar Industries", location: "Karnataka", plantType: "Import Terminal + Emulsion (90 days)", role: "CEO — Own Venture" },
+  { year: 2014, company: "Krush Tar Industries", location: "Karnataka", plantType: "Import Terminal + Emulsion (90 days)", role: "CEO, Own Venture" },
   { year: 2016, company: "Teknobit Industries", location: "Gujarat", plantType: "Bitumen Processing Plant", role: "Consultant" },
   { year: 2018, company: "Omnipotent Industries", location: "Panvel, Maharashtra", plantType: "Decanter + Warehousing", role: "Founder & MD" },
   { year: 2019, company: "Omnipotent Industries", location: "Vadodara, Gujarat", plantType: "Decanter + Warehousing", role: "Founder & MD" },
@@ -496,7 +496,7 @@ export const TARGET_AUDIENCES: TargetAudience[] = [
     feeDpr: "Rs 3–5L",
     feeSetup: "Rs 15–25L",
     feeRetainer: "Rs 1–2L/month",
-    keyServices: ["Raw material at zero/low cost — HIGHEST MARGIN", "Complete plant design: pelletization + pyrolysis + blending", "All regulatory clearances", "Government subsidy guidance (MNRE, Waste-to-Wealth)", "Full sales support"],
+    keyServices: ["Raw material at zero/low cost (HIGHEST MARGIN)", "Complete plant design: pelletization + pyrolysis + blending", "All regulatory clearances", "Government subsidy guidance (MNRE, Waste-to-Wealth)", "Full sales support"],
   },
 ];
 
@@ -516,7 +516,7 @@ export const IT_SERVICES: ItService[] = [
     id: "portals",
     name: "Consultant & Client Portals",
     icon: "Monitor",
-    description: "Custom web portals for consultants and clients — dashboards, document management, project stage tracking, communication logs, and payment milestone tracking.",
+    description: "Custom web portals for consultants and clients: dashboards, document management, project stage tracking, communication logs, and payment milestone tracking.",
     example: "Bio-bitumen consultant portal: client onboarding, 4-stage project tracker, document uploads, payment milestones, WhatsApp integration.",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
   },
@@ -548,7 +548,7 @@ export const IT_SERVICES: ItService[] = [
     id: "mobile-apps",
     name: "Mobile Apps for Plant Operations",
     icon: "Smartphone",
-    description: "Field-ready mobile apps for plant supervisors: shift reports, quality test entry, safety checklists, incident logging, photo uploads — offline-capable.",
+    description: "Field-ready mobile apps for plant supervisors: shift reports, quality test entry, safety checklists, incident logging, photo uploads. Offline-capable..",
     example: "Plant supervisor app: shift report entry, dispatch log, quality check form, safety incident with photo evidence upload.",
     tags: ["Progressive Web App", "Offline-capable", "iOS & Android"],
   },
@@ -580,16 +580,16 @@ export const PYROLYSIS_FEEDSTOCKS: PyrolysisFeedstock[] = [
     id: "plastic",
     name: "Plastic Waste",
     icon: "♻️",
-    description: "LDPE, HDPE, PP, and mixed plastics from packaging, bottles, and films. India's plastic waste is growing — only 8% is formally recycled.",
+    description: "LDPE, HDPE, PP, and mixed plastics from packaging, bottles, and films. India's plastic waste is growing; only 8% is formally recycled.",
     indiaVolume: "15.5 million MT/year generated across India",
-    highlight: "LDPE yields 93% pyrolysis oil · Plastic oil has >40 MJ/kg — diesel equivalent",
+    highlight: "LDPE yields 93% pyrolysis oil · Plastic oil has >40 MJ/kg, diesel equivalent",
     image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
   },
   {
     id: "tyres",
     name: "End-of-Life Tyres",
     icon: "🚗",
-    description: "Scrap tyres from cars, trucks, and heavy machinery. EPR regulations now mandate formal recycling — creating a guaranteed feedstock supply.",
+    description: "Scrap tyres from cars, trucks, and heavy machinery. EPR regulations now mandate formal recycling, creating a guaranteed feedstock supply.",
     indiaVolume: "2.5 million MT/year generated; additional 1.8 MT imported for recycling",
     highlight: "1,000 kg of tyres → 450 L fuel oil + 330 kg carbon black + 125 kg syngas",
     image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&q=80",
@@ -598,7 +598,7 @@ export const PYROLYSIS_FEEDSTOCKS: PyrolysisFeedstock[] = [
     id: "msw",
     name: "Municipal Solid Waste",
     icon: "🏙️",
-    description: "The combustible, non-organic fraction (RDF) from urban waste — plastics, paper, and textiles — suitable for thermal pyrolysis.",
+    description: "The combustible, non-organic fraction (RDF) from urban waste (plastics, paper, and textiles ) suitable for thermal pyrolysis.",
     indiaVolume: "1,50,000–1,70,000 tonnes/day generated across Indian cities",
     highlight: "Swachh Bharat Mission actively supports Waste-to-Energy conversion pathways",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
@@ -630,7 +630,7 @@ export const PYROLYSIS_OUTPUTS: PyrolysisOutput[] = [
     name: "Bio-Char / Charcoal",
     icon: "⚫",
     yieldRange: "25–35% of biomass (slow pyrolysis optimised for char)",
-    heatingValue: "28–32 MJ/kg — comparable to sub-bituminous coal",
+    heatingValue: "28-32 MJ/kg, comparable to sub-bituminous coal",
     uses: ["Soil amendment & carbon sequestration", "Charcoal briquettes for industry & export", "Activated carbon precursor", "Industrial process fuel"],
     colorClass: "border-slate-500/30 bg-slate-500/5",
   },
@@ -657,7 +657,7 @@ export const PYROLYSIS_OUTPUTS: PyrolysisOutput[] = [
     name: "Pyrolysis Fuel Oil (Plastic)",
     icon: "⛽",
     yieldRange: "600–930 litres per tonne of plastic input",
-    heatingValue: ">40 MJ/kg — diesel-equivalent calorific value",
+    heatingValue: ">40 MJ/kg, diesel-equivalent calorific value",
     uses: ["Industrial diesel substitute for boilers & generators", "Blending with conventional diesel (up to 30%)", "Shipping & marine fuel (blended)", "Petrochemical cracker feedstock"],
     colorClass: "border-yellow-500/30 bg-yellow-500/5",
   },

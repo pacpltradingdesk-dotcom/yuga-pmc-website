@@ -1,12 +1,12 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Geist, Outfit } from "next/font/google";
 import { LenisProvider } from "@/providers/lenis-provider";
 import "./globals.css";
 
-const inter = Inter({
+const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${geist.variable} ${outfit.variable}`}>
       <body className="font-sans bg-black text-white antialiased">
         <LenisProvider>{children}</LenisProvider>
       </body>

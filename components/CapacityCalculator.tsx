@@ -56,12 +56,9 @@ export default function CapacityCalculator() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-12"
         >
-          <motion.span variants={fadeUp} className="section-label">
-            ROI Calculator
-          </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-display font-bold text-4xl md:text-5xl text-white mt-4 mb-4"
+            className="font-display font-bold text-4xl md:text-5xl text-white mb-4"
           >
             Estimate Your <span className="text-gradient">Plant Returns</span>
           </motion.h2>
