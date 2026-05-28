@@ -52,6 +52,20 @@ export default function Hero() {
           />
         ))}
 
+      {/* Igloo-style corner annotations — desktop only */}
+      <div className="absolute top-6 right-8 z-10 text-right hidden md:block">
+        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">/// EST. 2001</p>
+        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">VADODARA, GUJARAT</p>
+      </div>
+      <div className="absolute bottom-8 left-6 z-10 hidden md:block">
+        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">CSIR-CRRI LICENSED</p>
+        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">KrishiBind Technology</p>
+      </div>
+      <div className="absolute bottom-8 right-8 z-10 text-right hidden md:block">
+        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">10 PLANTS+</p>
+        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">COMMISSIONED</p>
+      </div>
+
       {/* Content — left-aligned */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-24">
         <div className="max-w-2xl">

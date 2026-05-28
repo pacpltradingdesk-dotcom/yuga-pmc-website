@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import BusinessLineCards from "@/components/BusinessLineCards";
+import PlantTypes from "@/components/PlantTypes";
 import About from "@/components/About";
 import Products from "@/components/Products";
 import Technology from "@/components/Technology";
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Hero />
         <TrustBar />
         <BusinessLineCards />
+        <PlantTypes />
         <About />
         <Products />
         <Technology />
