@@ -2,17 +2,15 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { motion, useReducedMotion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import { HERO_IMAGE } from "@/lib/company-data";
 
-const PARTICLES = Array.from({ length: 20 }, (_, i) => ({
-  id: i,
-  top: `${Math.random() * 90}%`,
-  left: `${Math.random() * 95}%`,
-  delay: `${(Math.random() * 3).toFixed(1)}s`,
-  size: Math.random() > 0.7 ? "3px" : "2px",
-}));
+// SSR-safe dynamic import — static export ke saath safe
+const PlantScene3D = dynamic(() => import("./PlantScene3D"), {
+  ssr: false,
+  loading: () => null,
+});
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -20,60 +18,64 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[100dvh] flex items-center overflow-hidden"
+      className="relative min-h-[100dvh] flex items-center overflow-hidden bg-black"
     >
-      {/* Background image */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={HERO_IMAGE}
-        alt="Aerial view of Indian national highway"
-        className="absolute inset-0 w-full h-full object-cover"
-        fetchPriority="high"
-      />
+      {/* 3D Plant Scene — full canvas background */}
+      {!reduce && (
+        <div className="absolute inset-0 z-[1]">
+          <PlantScene3D />
+        </div>
+      )}
 
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/92 via-black/70 to-black/30 z-[1]" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20 z-[1]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_500px_at_15%_50%,rgba(245,158,11,0.07),transparent)] z-[2]" />
+      {/* Fallback background for reduced-motion / loading */}
+      {reduce && (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=85"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
+      )}
 
-      {/* Particles */}
-      {!reduce &&
-        PARTICLES.map((p) => (
-          <span
-            key={p.id}
-            className="particle z-[3]"
-            style={{
-              top: p.top,
-              left: p.left,
-              animationDelay: p.delay,
-              width: p.size,
-              height: p.size,
-            }}
-          />
-        ))}
+      {/* Gradient overlay — left text readable over 3D scene */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent z-[2]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10 z-[2]" />
 
       {/* Igloo-style corner annotations — desktop only */}
-      <div className="absolute top-6 right-8 z-10 text-right hidden md:block">
-        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">/// EST. 2001</p>
-        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">VADODARA, GUJARAT</p>
+      <div className="absolute top-6 right-8 z-[5] text-right hidden md:block">
+        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">
+          /// EST. 2001
+        </p>
+        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">
+          VADODARA, GUJARAT
+        </p>
       </div>
-      <div className="absolute bottom-8 left-6 z-10 hidden md:block">
-        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">CSIR-CRRI LICENSED</p>
-        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">KrishiBind Technology</p>
+      <div className="absolute bottom-8 left-6 z-[5] hidden md:block">
+        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">
+          CSIR-CRRI LICENSED
+        </p>
+        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">
+          KrishiBind Technology
+        </p>
       </div>
-      <div className="absolute bottom-8 right-8 z-10 text-right hidden md:block">
-        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">10 PLANTS+</p>
-        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">COMMISSIONED</p>
+      <div className="absolute bottom-8 right-8 z-[5] text-right hidden md:block">
+        <p className="font-mono text-[10px] text-white/30 uppercase tracking-[0.25em]">
+          10 PLANTS+
+        </p>
+        <p className="font-mono text-[10px] text-white/20 uppercase tracking-[0.15em] mt-1">
+          COMMISSIONED
+        </p>
       </div>
 
-      {/* Content — left-aligned */}
+      {/* Content — left-aligned, z above scene */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-24">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           {/* Eyebrow */}
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <span className="section-label">
               India&apos;s #1 Bio-Bitumen Consultant
@@ -84,7 +86,7 @@ export default function Hero() {
           <motion.h1
             initial={reduce ? false : { opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
             className="font-display font-black text-5xl sm:text-7xl lg:text-8xl text-white mt-6 mb-6 leading-[0.9] tracking-tight"
           >
             The Future of{" "}
@@ -96,8 +98,8 @@ export default function Hero() {
           <motion.p
             initial={reduce ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
+            transition={{ duration: 0.6, delay: 0.65 }}
+            className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-lg"
           >
             From land selection to commercial production. YUGA PMC handles
             everything. 10 plants commissioned. 25 years of bitumen expertise.
@@ -107,7 +109,7 @@ export default function Hero() {
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.6, delay: 0.85 }}
             className="flex flex-col sm:flex-row items-start gap-4"
           >
             <motion.div
