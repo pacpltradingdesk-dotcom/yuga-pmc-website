@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  distDir: "docs",
   trailingSlash: true,
   basePath: "/yuga-pmc-website",
   assetPrefix: "/yuga-pmc-website",
