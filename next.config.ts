@@ -3,10 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: "/yuga-pmc-live",
-  assetPrefix: "/yuga-pmc-live",
+  basePath: "/yuga-pmc-website",
+  assetPrefix: "/yuga-pmc-website",
   env: {
-    NEXT_PUBLIC_BASE_PATH: "/yuga-pmc-live",
+    NEXT_PUBLIC_BASE_PATH: "/yuga-pmc-website",
   },
   images: {
     unoptimized: true,
